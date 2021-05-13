@@ -14,7 +14,7 @@ request, hit the appropriate dockerised app.
 ## Installing
 On root dir, run:
 ```shell script
-pip install .
+make install
 ```
 
 ## Tests

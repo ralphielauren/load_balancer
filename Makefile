@@ -1,3 +1,5 @@
+install:
+	pip install .
 test:
 	docker-compose up -d
 	pytest --disable-warnings || true
