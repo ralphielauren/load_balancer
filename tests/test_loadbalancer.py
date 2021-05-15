@@ -20,9 +20,9 @@ def client():
         yield client
 
 
-def test_host_routing_mango(client):
-    result = client.get("/", headers={"Host": "www.mango.com"})
-    assert b"This is the mango application." in result.data
+def test_host_routing_cat(client):
+    result = client.get("/", headers={"Host": "www.cat.com"})
+    assert b"This is the cat application." in result.data
 
 
 def test_host_routing_apple(client):
@@ -36,9 +36,9 @@ def test_host_routing_not_found(client):
     assert result.status_code == 404
 
 
-def test_path_routing_mango(client):
-    result = client.get("/mango")
-    assert b"This is the mango application." in result.data
+def test_path_routing_cat(client):
+    result = client.get("/cat")
+    assert b"This is the cat application." in result.data
 
 
 def test_path_routing_apple(client):

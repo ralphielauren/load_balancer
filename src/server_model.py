@@ -26,7 +26,10 @@ class Server:
             SystemExit(e)
 
     def __str__(self):
-        return f"Server {self.protocol} + {self.endpoint} + ' is healthy: ' + {self.healthy}"
+        return (
+            f"Server {self.protocol} + {self.endpoint} + "
+            f"' is healthy: ' + {self.healthy}"
+        )
 
     def __eq__(self, other):
         if isinstance(other, Server):

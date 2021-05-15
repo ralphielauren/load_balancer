@@ -1,5 +1,5 @@
 hosts:
-  - host: www.mango.com
+  - host: www.cat.com
     servers:
       - localhost:8081
       - localhost:8082
@@ -8,7 +8,7 @@ hosts:
       - localhost:9081
       - localhost:9082
 paths:
-  - path: /mango
+  - path: /cat
     servers:
       - localhost:8081
       - localhost:8082

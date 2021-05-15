@@ -7,7 +7,7 @@ It is not supposed to be a sophisticated project, just an exploration based on d
 tutorials and ideas I read online about and want to try out to understand.
 
 ## Structure
-Using the `docker-compose.yaml`, create 2 apps `apple` and `mango`. In the tests folder,
+Using the `docker-compose.yaml`, create 2 apps `apple` and `cat`. In the tests folder,
 use `test_client` for the the load balancer app and depending on the hosts, or paths of the 
 request, hit the appropriate dockerised app. 
 
